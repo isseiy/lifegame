@@ -64,7 +64,7 @@ def move(conc, turnBase, turnCoeff, ax, col):
     
     ax.plot(x, y, color=col)        
 
-if __name__ == "__main__":
+def main():
     # parameters  
     turnBase = 1   # if +, evated. if -, attracted.
     turnCoeff = -0.2  # if large, easy to change direction
@@ -86,3 +86,6 @@ if __name__ == "__main__":
     os.makedirs("python_output", exist_ok=True)
     plt.savefig(os.path.join("python_output", name))
     plt.show()
+
+if __name__ == "__main__":
+    main()
